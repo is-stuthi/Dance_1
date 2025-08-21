@@ -1,0 +1,164 @@
+/* Reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+#Top {
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    text-align: center;
+    padding: 40px 20px;
+    color: #2c2c54;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#Top h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#Top h2 {
+    font-size: 1.5em;
+    color: #6a0572;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #6a0572;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffccff;
+}
+
+/* Section Styling */
+#B_solo, #C_Shreya, #Grp { /* Added #Grp here */
+    background-color: #e4f0fb;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin: 20px 0 10px;
+    color: #5a189a;
+    font-weight: bold;
+}
+
+/* Tables */
+.Table {
+    width: 90%;
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Heading {
+    background-color: #6a0572;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+td a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+td a:hover {
+    color: #e91e63;
+}
+
+#C_Shreya {
+    background-color: #ccf2ea;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #f0e6ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: #4a4a4a;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+footer a {
+    color: #6a0572;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+footer a:hover {
+    transform: scale(1.05);
+    color: #e91e63;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    .Table {
+        width: 100%;
+        overflow-x: auto;
+        /* Removed display: block; and white-space: nowrap; from here */
+    }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+tbody tr:hover {
+  background-color: #f0f8ff;
+  transition: background-color 0.3s ease;
+}
+/* Removed display: block; overflow-x: auto; white-space: nowrap; from here for general table styling */
+/* Added specific styling for table responsiveness if needed, but not globally */
